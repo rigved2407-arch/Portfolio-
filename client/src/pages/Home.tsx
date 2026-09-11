@@ -19,30 +19,48 @@ const artworkPath = "/manus-storage/studio-nova-editorial-art_42f0a545.png";
 const projects = [
   {
     index: "01",
-    title: "Kōyō House",
-    category: "Hospitality / Digital identity",
+    title: "Ethima",
+    category: "Digital experience / Brand presence",
     year: "2026",
-    description: "A slower, warmer digital home for a design-led stay in the hills.",
+    description: "A clear, expressive digital home built around a confident brand point of view.",
     accent: "lime",
-    link: "#",
+    link: "https://ethima.in",
   },
   {
     index: "02",
-    title: "Kindred Objects",
-    category: "E-commerce / Art direction",
-    year: "2025",
-    description: "A tactile shopfront that makes considered objects feel collectible.",
+    title: "Hair Master Kishor",
+    category: "Personal brand / Service experience",
+    year: "2026",
+    description: "A polished, personality-led website designed to turn expertise into bookings.",
     accent: "blue",
-    link: "#",
+    link: "https://hairmasterkishor.business/",
   },
   {
     index: "03",
-    title: "Field Notes",
-    category: "Editorial / Experience design",
-    year: "2025",
-    description: "An editorial system for a curious studio working at the edge of culture.",
+    title: "House of Hobos",
+    category: "Lifestyle / Digital identity",
+    year: "2026",
+    description: "A memorable digital front door for a brand with an unconventional spirit.",
     accent: "ink",
-    link: "#",
+    link: "https://house-of-hobos.vercel.app?_vercel_share=oaWMUae486gIKdJX7vXHvEcCMwPKbvAm",
+  },
+  {
+    index: "04",
+    title: "Treasure Box",
+    category: "E-commerce / Product storytelling",
+    year: "2026",
+    description: "A playful storefront that makes discovery feel tactile, simple, and rewarding.",
+    accent: "gold",
+    link: "https://treasurebox-1.vercel.app/",
+  },
+  {
+    index: "05",
+    title: "Goyal & Co.",
+    category: "Professional services / Trust-building",
+    year: "2026",
+    description: "A focused, credible web presence for a team that values clarity and detail.",
+    accent: "rust",
+    link: "https://goyal-and-co.vercel.app/#projects",
   },
 ];
 
@@ -104,6 +122,18 @@ function ProjectArtwork({ project }: { project: (typeof projects)[number] }) {
           <div className="art-blue-caption">VOL. 04 / 2025</div>
         </>
       )}
+      {project.accent === "gold" && (
+        <>
+          <div className="art-gold-sun" />
+          <div className="art-gold-card">
+            <div className="art-gold-card__top"><span>TREASURE</span><span>BOX / 01</span></div>
+            <div className="art-gold-card__title">Little<br /><i>finds.</i></div>
+            <div className="art-gold-card__rule" />
+            <div className="art-gold-card__foot">a collection of good things</div>
+          </div>
+          <div className="art-gold-label">OPEN / DISCOVER / KEEP</div>
+        </>
+      )}
       {project.accent === "ink" && (
         <>
           <div className="art-field-notes">
@@ -113,6 +143,18 @@ function ProjectArtwork({ project }: { project: (typeof projects)[number] }) {
             <div className="art-field-notes__foot">A publication for the in-between.</div>
           </div>
           <div className="art-orbit" />
+        </>
+      )}
+      {project.accent === "rust" && (
+        <>
+          <div className="art-rust-panel">
+            <div className="art-rust-panel__top"><span>GOYAL &amp; CO.</span><span>EST. 1998</span></div>
+            <div className="art-rust-panel__title">Clarity<br /><i>in practice.</i></div>
+            <div className="art-rust-panel__line" />
+          </div>
+          <div className="art-rust-shape art-rust-shape--one" />
+          <div className="art-rust-shape art-rust-shape--two" />
+          <div className="art-rust-caption">TRUST / DETAIL / DIRECTION</div>
         </>
       )}
       <div className="project-art__grain" />
