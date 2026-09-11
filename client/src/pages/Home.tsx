@@ -25,7 +25,7 @@ const projects = [
     description: "A clear, expressive digital home built around a confident brand point of view.",
     accent: "lime",
     link: "https://ethima.in",
-    image: "/portfolio-sites/ethima.webp",
+    image: "/portfolio-sites/ethima-custom.jpg",
   },
   {
     index: "02",
