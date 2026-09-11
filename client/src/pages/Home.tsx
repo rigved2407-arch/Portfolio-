@@ -55,7 +55,7 @@ const projects = [
     description: "A playful storefront that makes discovery feel tactile, simple, and rewarding.",
     accent: "gold",
     link: "https://treasurebox-1.vercel.app/",
-    image: "/portfolio-sites/treasure-box.webp",
+    image: "/portfolio-sites/treasure-box-custom.jpg",
   },
   {
     index: "05",
