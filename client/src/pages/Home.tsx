@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 
-const artworkPath = "/hero/editorial-art.png";
+const artworkPath = "/manus-storage/studio-nova-editorial-art_42f0a545.png";
 
 const projects = [
   {
