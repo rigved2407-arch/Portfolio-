@@ -173,9 +173,9 @@ export default function Home() {
   return (
     <main className="site-shell">
       <header className={`site-nav ${menuOpen ? "site-nav--open" : ""}`}>
-        <a className="brand" href="#top" aria-label="Studio Nova home">
+        <a className="brand" href="#top" aria-label="Rigved home">
           <span className="brand-mark"><span /></span>
-          <span>NOVA<span className="brand-dot">.</span></span>
+          <span>RIGVED<span className="brand-dot">.</span></span>
         </a>
 
         <nav className="desktop-links" aria-label="Primary navigation">
@@ -294,13 +294,13 @@ export default function Home() {
         <div className="contact-grid" />
         <div className="container contact-inner">
           <Reveal><span className="section-kicker section-kicker--light">05 / Start something</span><h2>Have a good<br /><em>feeling about this?</em></h2></Reveal>
-          <Reveal delay={100} className="contact-bottom"><p>Tell me a little about the idea, the ambition, or simply the thing that&apos;s not working yet.</p><a className="contact-email" href="mailto:hello@yourstudio.com">hello@yourstudio.com <ArrowUpRight size={22} /></a></Reveal>
+          <Reveal delay={100} className="contact-bottom"><p>Tell me a little about the idea, the ambition, or simply the thing that&apos;s not working yet.</p><a className="contact-email" href="mailto:rigved2407@gmail.com">rigved2407@gmail.com <ArrowUpRight size={22} /></a></Reveal>
         </div>
       </section>
 
       <footer className="site-footer">
         <div className="container footer-inner">
-          <span>© 2026 Nova Studio</span><span>Designed with intent / built for the web</span><div className="footer-socials"><a href="#top" aria-label="Instagram"><Instagram size={16} /></a><a href="#top" aria-label="LinkedIn"><Linkedin size={16} /></a></div>
+          <span>© 2026 Rigved</span><span>Designed with intent / built for the web</span><div className="footer-socials"><a href="#top" aria-label="Instagram"><Instagram size={16} /></a><a href="#top" aria-label="LinkedIn"><Linkedin size={16} /></a></div>
         </div>
       </footer>
     </main>
