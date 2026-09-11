@@ -25,6 +25,7 @@ const projects = [
     description: "A clear, expressive digital home built around a confident brand point of view.",
     accent: "lime",
     link: "https://ethima.in",
+    image: "/manus-storage/ethima_809baa38.webp",
   },
   {
     index: "02",
@@ -34,6 +35,7 @@ const projects = [
     description: "A polished, personality-led website designed to turn expertise into bookings.",
     accent: "blue",
     link: "https://hairmasterkishor.business/",
+    image: "/manus-storage/hairmaster-kishor_35187773.webp",
   },
   {
     index: "03",
@@ -43,6 +45,7 @@ const projects = [
     description: "A memorable digital front door for a brand with an unconventional spirit.",
     accent: "ink",
     link: "https://house-of-hobos.vercel.app?_vercel_share=oaWMUae486gIKdJX7vXHvEcCMwPKbvAm",
+    image: "/manus-storage/house-of-hobos_cfaf8471.webp",
   },
   {
     index: "04",
@@ -52,6 +55,7 @@ const projects = [
     description: "A playful storefront that makes discovery feel tactile, simple, and rewarding.",
     accent: "gold",
     link: "https://treasurebox-1.vercel.app/",
+    image: "/manus-storage/treasure-box_cf7bbca9.webp",
   },
   {
     index: "05",
@@ -61,6 +65,7 @@ const projects = [
     description: "A focused, credible web presence for a team that values clarity and detail.",
     accent: "rust",
     link: "https://goyal-and-co.vercel.app/#projects",
+    image: "/manus-storage/goyal-and-co_2ec95c55.webp",
   },
 ];
 
@@ -98,6 +103,16 @@ function Reveal({ children, className = "", delay = 0 }: { children: React.React
 }
 
 function ProjectArtwork({ project }: { project: (typeof projects)[number] }) {
+  if (project.image) {
+    return (
+      <div className="project-site-preview">
+        <img src={project.image} alt={`${project.title} website preview`} />
+        <div className="project-site-preview__shade" />
+        <span className="project-site-preview__label">Live site / click to visit <ExternalLink size={14} /></span>
+      </div>
+    );
+  }
+
   return (
     <div className={`project-art project-art--${project.accent}`} aria-hidden="true">
       {project.accent === "lime" && (
