@@ -250,9 +250,11 @@ h2 { font-size: clamp(3.3rem, 6.2vw, 6.3rem); line-height: .9; }
 .contact-inner h2 { font-size: clamp(4.2rem, 9vw, 9.5rem); line-height: .85; margin-bottom: 7rem; max-width: 9ch; }
 .contact-inner h2 em { color: var(--accent); }
 .contact-bottom { align-items: end; display: flex; justify-content: space-between; }
+.contact-copy { display: flex; flex-direction: column; gap: 2.5rem; }
 .contact-bottom p { color: rgba(238,236,228,.68); font-size: .95rem; line-height: 1.5; max-width: 17rem; }
 .contact-email { align-items: center; border-bottom: 1px solid rgba(238,236,228,.7); display: flex; font-family: 'Playfair Display', serif; font-size: clamp(1.25rem, 3vw, 2.1rem); font-style: italic; gap: .5rem; padding-bottom: .55rem; transition: color .18s ease, border-color .18s ease; }
 .contact-email:hover { border-color: var(--accent); color: var(--accent); }
+.contact-manual { color: rgba(238,236,228,.55); font-family: 'DM Mono', monospace; font-size: .57rem; letter-spacing: .07em; text-transform: uppercase; }
 .site-footer { background: #315fe7; color: rgba(238,236,228,.65); padding: 1.2rem 0 1.7rem; }
 .footer-inner { align-items: center; border-top: 1px solid rgba(238,236,228,.25); display: flex; gap: 1rem; padding-top: 1.2rem; }
 .footer-inner > span:nth-child(2) { margin: 0 auto; }
@@ -303,6 +305,8 @@ h2 { font-size: clamp(3.3rem, 6.2vw, 6.3rem); line-height: .9; }
   .statement { font-size: clamp(3.5rem, 16vw, 5.3rem); }
   .contact-inner h2 { font-size: clamp(4rem, 18vw, 6.5rem); margin-bottom: 5rem; }
   .contact-bottom { align-items: start; flex-direction: column; gap: 3rem; }
+  .contact-copy { gap: 1.8rem; }
+  .contact-manual { margin-top: -1.5rem; }
   .contact-email { font-size: 1.25rem; }
   .footer-inner { align-items: start; flex-wrap: wrap; }
   .footer-inner > span:nth-child(2) { margin: 0; order: 3; width: 100%; }

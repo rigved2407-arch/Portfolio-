@@ -309,7 +309,7 @@ export default function Home() {
         <div className="contact-grid" />
         <div className="container contact-inner">
           <Reveal><span className="section-kicker section-kicker--light">05 / Start something</span><h2>Have a good<br /><em>feeling about this?</em></h2></Reveal>
-          <Reveal delay={100} className="contact-bottom"><p>Tell me a little about the idea, the ambition, or simply the thing that&apos;s not working yet.</p><a className="contact-email" href="mailto:rigved2407@gmail.com">rigved2407@gmail.com <ArrowUpRight size={22} /></a></Reveal>
+          <Reveal delay={100} className="contact-bottom"><div className="contact-copy"><p>Tell me a little about the idea, the ambition, or simply the thing that&apos;s not working yet.</p><a className="contact-email" href="mailto:rigved2407@gmail.com">rigved2407@gmail.com <ArrowUpRight size={22} /></a></div><span className="contact-manual">Email directly / no form needed</span></Reveal>
         </div>
       </section>
 
